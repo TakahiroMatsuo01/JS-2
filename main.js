@@ -1,19 +1,22 @@
 let getBtn = document.getElementById("checkButton");
 getBtn.addEventListener("click",function getValue() {
    console.log("JS");
-    let FizzNum = document.getElementById('FizzNum');
-    let BuzzNum = document.getElementById('BuzzNum');
-    let getFizzValue = FizzNum.value;
-    let getBuzzValue = BuzzNum.value;
-
-       for(let i=0; i<100; i++){
-            let DEVIED=getFizzValue * getBuzzValue * i;
-            if( DEVIED  % 3 === 0 && DEVIED % 5 === 0 ) {
-                console.log(`FizzBuzz\b${DEVIED}`);
-            } else if ( DEVIED%3===0 ) {
-                console.log(`Buzz\b${DEVIED}`);
-            } else if ( DEVIED%5===0 ) {
-                console.log(`Fizz\b${DEVIED}`);
-            }
-        }
+        const FizzNum = document.getElementById('FizzNum');
+        const BuzzNum = document.getElementById('BuzzNum');
+        const getFizzValue = FizzNum.value;
+        const getBuzzValue = BuzzNum.value;
+       for(let i=1; i<100; i++){
+           let Fizz = getFizzValue*i;
+           let Buzz = getBuzzValue*i; 
+            if( Fizz%getFizzValue=== 0 && Buzz % getBuzzValue === 0 ) {
+                console.log(`FizzBuzz\b${Fizz}`);
+                console.log(`FizzBuzz\b${Buzz}`)
+            } else if ( Fizz%getFizzValue===0 ) {
+                 console.log(`Fizz\b${Fizz}`);
+                 console.log(`Buzz\b${Buzz}`)
+            } else if ( Buzz%getBuzzValue===0 ) {
+                console.log(`Fizz\b${Fizz}`);
+                console.log(`Buzz\b${Buzz}`)
+             }
+         }
     } );
