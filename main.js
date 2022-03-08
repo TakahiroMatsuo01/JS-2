@@ -7,16 +7,14 @@ getBtn.addEventListener("click",function getValue() {
         const getBuzzValue = BuzzNum.value;
        for(let i=1; i<100; i++){
            let Fizz = getFizzValue*i;
-           let Buzz = getBuzzValue*i; 
-            if( Fizz%getFizzValue=== 0 && Buzz % getBuzzValue === 0 ) {
-                console.log(`FizzBuzz\b${Fizz}`);
-                console.log(`FizzBuzz\b${Buzz}`)
-            } else if ( Fizz%getFizzValue===0 ) {
+           let Buzz = getBuzzValue*i;
+           let FizzBuzz = Fizz * Buzz;  
+            if( i%FizzBuzz ===0) {
+                console.log(`FizzBuzz\b${FizzBuzz}`);
+            } else if (i%getFizzValue===0 ) {
                  console.log(`Fizz\b${Fizz}`);
-                 console.log(`Buzz\b${Buzz}`)
-            } else if ( Buzz%getBuzzValue===0 ) {
-                console.log(`Fizz\b${Fizz}`);
-                console.log(`Buzz\b${Buzz}`)
+            } else if (i%getBuzzValue===0 ) {
+                console.log(`Buzz\b${Buzz}`);
              }
          }
     } );
