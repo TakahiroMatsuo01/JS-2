@@ -11,9 +11,9 @@ getBtn.addEventListener("click",function getValue() {
            let FizzBuzz = Fizz * Buzz;  
             if( i%FizzBuzz ===0) {
                 console.log(`FizzBuzz\b${FizzBuzz}`);
-            } else if (i%getFizzValue===0 ) {
+            } else if (i%FizzNum===0 ) {
                  console.log(`Fizz\b${Fizz}`);
-            } else if (i%getBuzzValue===0 ) {
+            } else if (i%BuzzNum===0 ) {
                 console.log(`Buzz\b${Buzz}`);
              }
          }
