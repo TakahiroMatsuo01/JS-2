@@ -6,14 +6,14 @@ getBtn.addEventListener("click",function getValue() {
         const getFizzValue = FizzNum.value;
         const getBuzzValue = BuzzNum.value;
        for(let i=1; i<100; i++){
-           let Fizz = getFizzValue*i;
-           let Buzz = getBuzzValue*i;
+           let Fizz = getFizzValue;
+           let Buzz = getBuzzValue;
            let FizzBuzz = Fizz * Buzz;  
-            if( i%FizzBuzz ===0) {
+            if( i%Fizz ===0　&& i%Buzz ===0) {
                 console.log(`FizzBuzz\b${FizzBuzz}`);
-            } else if (i%FizzNum===0 ) {
+            } else if (i%Fizz===0 ) {
                  console.log(`Fizz\b${Fizz}`);
-            } else if (i%BuzzNum===0 ) {
+            } else if (i%Buzz===0 ) {
                 console.log(`Buzz\b${Buzz}`);
              }
          }
