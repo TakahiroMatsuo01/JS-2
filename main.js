@@ -14,12 +14,16 @@ console.log("JS");
         document.getElementById('error').textContent = Perfect;
         document.getElementById('error_b').textContent = Perfect;
     for(let i=1; i<100; i++){
+        const newDiv = document.createElement("p");
         if( i%FizzNum ===0　&& i%BuzzNum ===0) {
-            console.log(`FizzBuzz\b${i}`);
+            let Fizz_buzzlog ="FizzBuzz\b"+`${i}`;
+            div1.appendChild(newDiv).textContent= Fizz_buzzlog;
         } else if (i%FizzNum===0 ) {
-            console.log(`Fizz\b${i}`);
+            let Fizz_log ="Fizz\b"+`${i}`;
+            div1.appendChild(newDiv).textContent= Fizz_log;
         } else if (i%BuzzNum===0 ) {
-            console.log(`Buzz\b${i}`);
+            let Buzz_log ="Fizz\b"+`${i}`;
+            div1.appendChild(newDiv).textContent = Buzz_log;
         }
     }
 }       
